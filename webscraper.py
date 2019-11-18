@@ -5,7 +5,7 @@ from urllib.request import urlopen as uReq
 # Page I'm scraping
 my_url = 'https://www.newegg.com/Desktop-Graphics-Cards/SubCategory/ID-48?name=Desktop%2DGraphics%2DCards&Order=BESTSELLING'
 
-# Creating a variable uClient that accesses the URL opens, reads the page
+# Creating a variable uClient that accesses the URL, reads HTML on the page
 uClient = uReq(my_url)
 page_html = uClient.read()
 uClient.close()
